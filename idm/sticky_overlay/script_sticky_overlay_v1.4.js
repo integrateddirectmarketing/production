@@ -133,12 +133,13 @@ jQuery(document).ready(function($){
 
 			if (campaignStarted && !campaignEnded &&($.cookie(cookieName) == null) && ($.cookie("completedCookie") == null)) {
 				lightBoxPopup(lightBoxContent);
-				createSticky($('.popUpContainer').animate({left: '+=425', top: '+=460'}, 1000));
-				var zone = document.getElementsByClassName("main-container"); 	// var zone = document.getElementById("section-content");
+
+				var zone = document.getElementById("page-637");
 				var exited = 0;
-				exitIntent(zone, 'mouseout', function(evt) {
+				exitIntent(zone, 'mouseleave', function(evt) {
 					if(exited == 0) {
 						console.log("trigger");
+				        createSticky($('.popUpContainer').animate({left: '+=425', top: '+=460'}, 1000));
 						exited += 1;
 					}		
 					else {
