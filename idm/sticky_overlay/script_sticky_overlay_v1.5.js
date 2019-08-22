@@ -133,7 +133,7 @@ jQuery(document).ready(function($){
 
 			if (campaignStarted && !campaignEnded &&($.cookie(cookieName) == null) && ($.cookie("completedCookie") == null)) {
 				lightBoxPopup(lightBoxContent);
-                var zoneId = $("div[id*='page-']");
+                var zoneId = $("article[id*='page-']");
 				var zone = document.getElementById(zoneId);
 				var exited = 0;
 				exitIntent(zone, 'mouseleave', function(evt) {
