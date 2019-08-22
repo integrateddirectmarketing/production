@@ -10,14 +10,14 @@ jQuery(document).ready(function($){
 			var lbxCookie	= document.createElement('script');
 			lbxCookie.id	= 'lbx_cookie';
 			lbxCookie.type = 'text/javascript';
-			lbxCookie.src = 'https://cdn.jsdelivr.net/gh/integrateddirectmarketing/production/idm/js/cookie.js';
+			lbxCookie.src = 'https://cdn.jsdelivr.net/gh/integrateddirectmarketing/production/idm/sticky_overlay/js/cookie.js';
 		}
 	
 		if (!document.getElementById('lbx_validate')){
 			var lbxValidate	= document.createElement('script');
 			lbxValidate.id	= 'lbx_validate';
 			lbxValidate.type = 'text/javascript';
-			lbxValidate.src = 'https://cdn.jsdelivr.net/gh/integrateddirectmarketing/production/idm/js/validate.js';
+			lbxValidate.src = 'https://cdn.jsdelivr.net/gh/integrateddirectmarketing/production/idm/sticky_overlay/js/validate.js';
 		}
 
 /*
