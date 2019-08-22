@@ -136,6 +136,7 @@ jQuery(document).ready(function($){
 				var zone = document.getElementsByClassName("main-container"); 	// var zone = document.getElementById("section-content");
 				var exited = 0;
 				exitIntent(zone, 'mouseleave', function(evt) {
+					console.log("trigger");
 					if(exited == 0) {
 						createSticky($('.popUpContainer').animate({left: '+=425', top: '+=460'}, 1000));
 						exited += 1;
