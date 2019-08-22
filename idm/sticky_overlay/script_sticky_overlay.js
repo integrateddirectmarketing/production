@@ -1,5 +1,5 @@
 
-/* FINCA LBX */
+/* IDM Sticky Overlay */
 jQuery.noConflict();
 
 jQuery(document).ready(function($){
